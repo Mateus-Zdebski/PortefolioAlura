@@ -1,0 +1,403 @@
+:root {
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+
+
+
+/* Estilo para a Sessão de Menu */
+section.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.menu header {
+    display: flex;
+    align-items: center;
+}
+
+.menu header img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.menu__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu__list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu__list__item {
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.menu__list__item:last-child {
+    margin-right: 0;
+}
+
+.menu__list__item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu__list__item a:hover {
+    color: #ff0000;
+}
+
+/*Sessão Title*/
+.title {
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+}
+
+.title__bio {
+    font-size: 30px;
+}
+
+.title__subsection {
+    font-size: 25px;
+}
+
+.title__profile {
+    margin-top: 2%;
+    float: right;
+   max-width: 20%;
+    height: au;
+}
+
+.title__container {
+    text-align: left;
+    margin-top: 10%;
+}
+
+.title__network {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.title__network__item {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+/* Estilos  para a seção "Sobre Mim" */
+.about__container {
+    margin-left: 5%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about__paragraph {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.about__signature {
+    display: block;
+    margin-top: 20px;
+}
+
+/*Skills    */
+.skills__title {
+    text-align: center;
+    font-size: 20px;
+}
+
+.skills__line {
+    text-align: center;
+}
+
+.skills__box {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.skills__img img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.skills__name {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/*Sessão Hobbies*/
+
+.hobbies__title {
+    text-align: center;
+    font-size: 20px;
+}
+
+.hobbies__line {
+    text-align: center;
+}
+
+.hobbies__box {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.hobbies__img img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.hobbies__name {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Experiência Acadêmica*/
+.academic {
+    text-align: center;
+}
+
+.academic__courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.academic__courses__box {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.academic__courses__item__img img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.academic__courses__item__title h4 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.academic__courses__item__subtitle p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* experiência*/
+
+.experience {
+    text-align: center;
+}
+
+.experience__box {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.experience__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.experience__title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.experience__text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.experience__repo,
+.experience__demo {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.experiencia__botao--repo,
+.experiencia__botao--demo {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Contato*/
+
+.formcontato {
+    text-align: center; 
+}
+
+.formcontato__contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 50px;
+}
+
+.formcontato--esquerda {
+    margin-right: 20px; 
+}
+
+.formcontato__img {
+    max-width: 60%; 
+    height: auto; 
+}
+
+.formcontato__text {
+    text-align: left; 
+}
+
+.formcontato__title {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+.formcontato__subtext {
+    font-size: 16px; 
+    margin-bottom: 10px;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    width: 100%; 
+    margin-bottom: 10px; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
+.formcontato__botao {
+    padding: 10px 20px; 
+    background-color: #007bff;
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+/*footeer*/
+
+.footer {
+    text-align: center;
+    background-color: #f9f9f9; 
+    padding: 20px 0;
+}
+
+.footer__rodape p {
+    margin: 5px 0; 
+    font-size: 14px; 
+    color: #555; 
+}
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+/* Tablet */
+@media (max-width: 1024px) {
+    .menu__list__item {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        padding: 10px;
+        
+    }
+
+    .menu header img {
+        width: 40px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu__title {
+        font-size: 20px;
+        
+    }
+
+    .menu__list__item {
+        margin-right: 0;
+        margin-bottom: 5px;
+        font-size: 14px;
+        justify-content: space-between;
+    }
+
+    .menu__list__item a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+}
