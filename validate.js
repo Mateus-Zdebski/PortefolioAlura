@@ -1,1 +1,4 @@
-//Seu JavaScript de validação aqui
+function toggleMenu() {
+    var menu = document.getElementById('menu-toggle');
+    menu.classList.toggle('active');
+}
